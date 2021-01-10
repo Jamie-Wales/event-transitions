@@ -1,0 +1,42 @@
+body {
+  display: flex;
+}
+
+#box {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.rotate {
+  transform: rotate(20deg);
+  transition: 1s;
+}
+
+#box2 {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+  margin: 20px;
+}
+
+.no-show {
+  opacity: 0;
+}
+
+.fade-in {
+  animation-name: opacity;
+  -moz-animation-name: opacity;
+  -o-animation-name: opacity;
+  animation-duration: 4s;
+  opacity: 1;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    background-color: 1;
+  }
+}
